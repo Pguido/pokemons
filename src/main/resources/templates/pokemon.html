@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> Pokemon </title>
+</head>
+<h1> Pokemon:{{nombre}} </h1>
+
+<h2> Tipo: {{tipo}} </h2>
+
+
+{{#each fotos}}
+<img src="{{this}}" border="1" style="max-width:100%;width:auto;height:auto;">
+</img>
+{{/each}}
+
+
+<li> {{evolucion.nombre}} </li>
+{{#each evolucion.fotos}}
+<img src="{{this}}" border="1" style="max-width:100%;width:auto;height:auto;">
+</img>
+<li> {{evolucion.evolucion.nombre}} </li>
+{{#each evolucion.evolucion.fotos}}
+<img src="{{this}}" border="1" style="max-width:100%;width:auto;height:auto;">
+</img>
+{{/each}}
+{{/each}}
+
+
+
+</body>
+</hmtl>

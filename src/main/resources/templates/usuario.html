@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> Usuario </title>
+</head>
+<h1> Usuario:{{nombre}} </h1>
+<h2> Capturas </h2>
+
+<ul>
+{{#each capturas}}
+<li> <a href="/pokemons/{{pokemon.nombre}}"> {{pokemon.nombre}} </a>| </li>
+{{/each}}
+</ul>
+
+</body>
+</hmtl>
